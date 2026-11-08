@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title> Kawaii To-Do todo-list </title>
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header-top">
+        <a href="menu.html" class="btn-retour">⟵ Retour</a>
+        <h2>🌸 To-Do List 🌸</h2>
+    </div>
+
+<div class="app-container">
+    <div class="todo-card">
+        <div class="progress">
+            <span>Tache finis</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <span id="progress-text">0 / 0</span>
+        </div>
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="Ajoute tes Taches ici....">
+            <button id="add-btn"><i class="fas fa-plus"></i></button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+</div>
+
+<script src="main3.js"></script>
+</body>
+</html>

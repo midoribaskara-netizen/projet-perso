@@ -1,0 +1,157 @@
+body{
+    background-image: url("grenouille.jpg");
+    background-size: 1300px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Card */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 25px;
+    width: 350px;
+    color: black;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.todo-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Progress */
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #ff69b4;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+
+/* Input */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: #ff69b4;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff85c1;
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li button {
+    background: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+    color: black;
+}
+
+li button:hover {
+    background: rgba(255,105,180,0.8);
+}
+
+.btn-retour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd6e8;
+    color: #ff69b4;
+    border-radius: 12px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #ff9acb;
+    transition: 0.2s ease;
+    margin: 20px;
+}
+
+.btn-retour:hover {
+    background-color: #ffb6d9;
+    transform: scale(1.05);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centre le titre */
+    position: relative; /* permet de placer le bouton */
+    margin-bottom: 20px;
+}
+
+/* Bouton retour placé dans le coin gauche */
+.header-top .btn-retour {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

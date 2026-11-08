@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendrier</title>
+</head>
+<body>
+
+<div class="header-top">
+    <a href="menu.html" class="btn-retour">⟵ Retour</a>
+    <h1 id="title">Mon calendrier</h1>
+</div>
+    <div id="calendrier-container">
+        <div id="calendrierDiv">
+
+            <!-- En‑tête avec fleurs  -->
+            <div id="calendrierHeading">
+
+                <div class="month-nav">
+                    <button id="prevMonth" class="month-btn">🌸</button>
+                    <p id="prevLabel" class="month-label"></p>
+                </div>
+
+                <p id="habitTitle">Mes activités</p>
+
+                <div class="month-nav">
+                    <button id="nextMonth" class="month-btn">🌸</button>
+                    <p id="nextLabel" class="month-label"></p>
+                </div>
+
+            </div>
+
+            <!-- Sélecteur d'année + grille du calendrier -->
+            <div id="calendrierContent">
+
+                <div id="yearSelector">
+                    <label for="yearDropdown">Année :</label>
+                    <select id="yearDropdown"></select>
+                </div>
+
+                <div id="calendarGrid"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- popup journée + evenement -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2 id="popup-date"></h2>
+
+            <div class="popup-section">
+                <h3>Événements importants ✨</h3>
+                <textarea id="event-text" placeholder="Anniversaire, rendez-vous, tâche importante..."></textarea>
+            </div>
+
+            <div class="popup-section">
+                <h3>Ma Journée 🌸</h3>
+                <textarea id="journal-text" placeholder="Raconte ta journée ici..."></textarea>
+            </div>
+
+            <div class="popup-buttons">
+                <button id="save-popup">Enregistrer</button>
+                <button id="close-popup">Fermer</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

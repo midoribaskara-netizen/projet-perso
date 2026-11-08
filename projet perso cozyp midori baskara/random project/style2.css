@@ -1,0 +1,89 @@
+body{
+    background-image: url("fond.jpg");
+    background-size: 1500px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+hr{
+    width: 500px;
+    height: 2px;
+    background-color:aliceblue;
+    border: 0;
+}
+
+#game-board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+
+    background-color: aliceblue ;
+    color: black;
+    border:6px solid pink;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game-cell{
+    border: 6px solid pink;
+    border-radius: 2px;
+    font-size: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winning-game-cell {
+    background-color: gold;
+    color:aliceblue;
+}
+
+#game-restart-button{
+    height: 50px;
+    width:150px;
+    border: 5px solid pink;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn-retour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd6e8;
+    color: #ff69b4;
+    border-radius: 12px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #ff9acb;
+    transition: 0.2s ease;
+    margin: 20px;
+}
+
+.btn-retour:hover {
+    background-color: #ffb6d9;
+    transform: scale(1.05);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative; 
+    margin-bottom: 20px;
+}
+
+
+.header-top .btn-retour {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
